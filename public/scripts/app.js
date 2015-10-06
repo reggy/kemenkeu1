@@ -16,15 +16,15 @@ if(priceTrend.length > 0){
 		// var month = spliter[1];
 		// var day = spliter[2];
 		// arrTrend.push([month+"-"+day]);
-		// $datas.push(parseFloat(priceTrend[i].price));
+		$datas.push(parseFloat(priceTrend[i].data));
 
 	}
-	// console.log("dates : ",dates);
+	// 
 }
-
+console.log("$datas : ",$datas);
 
 $result = [{data: $datas}];
-jQuery('#linechart').highcharts({
+jQuery('.linechart').highcharts({
 	chart: {
 		defaultSeriesType: 'line',
 		backgroundColor:'rgba(255, 255, 255, 0.1)'
